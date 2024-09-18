@@ -29,7 +29,7 @@ public class StandAloneTest extends BaseTest {
 	public void submitOrder() throws InterruptedException, IOException {
 
 		WebDriver driver = new ChromeDriver();
-		LandingPage landingpage = LaunchApplication();
+		LandingPage landingpage = new LandingPage(driver);
 		String ProductName = "ZARA COAT 3";
 		landingpage.LoginApplication("adviky2022211@gmail.com", "Password@1234");
 		ProductCatalogue productcatalogue = new ProductCatalogue(driver);
